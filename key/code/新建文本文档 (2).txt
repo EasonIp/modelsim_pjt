@@ -1,0 +1,81 @@
+/********************************Copyright**************************************                           
+**----------------------------File information--------------------------
+** File name  :key_testbench.v  
+** CreateDate :2015.03
+** Funtions   :按键消抖的测试文件
+** Operate on :M5C06N3L114C7
+** Copyright  :All rights reserved. 
+** Version    :V1.0
+**---------------------------Modify the file information----------------
+** Modified by   :
+** Modified data :        
+** Modify Content:
+*******************************************************************************/
+ 
+ module  key_testbench;
+  
+    reg          clk;
+    reg          rst_n;
+    reg          key_in;
+    wire         key_out;
+    
+ 
+ key_shake  key_shake_1(
+                                     .clk,
+                                     .rst_n,
+                                     
+                                     .key_in,
+                                     .key_out
+                                         );
+                                         
+
+localparam  tck = 24;
+localparam  t = 1000/tck;
+
+always  #(t/2)  clk = ~clk;
+
+task key_in_down;
+ begin
+     #(3*t)       key_in = 1;
+     #(3*t)       key_in = 0;     
+     #(8*t)       key_in = 1;
+     #(8*t)    key_in = 0;
+     #(13*t)   key_in = 1;
+     #(13*t)     key_in = 0;
+  end
+ endtask
+ 
+task key_in_up;
+ begin
+     #(3*t)        key_in = 0;     
+     #(3*t)        key_in = 1;     
+   #(8*t)        key_in = 0;     
+     #(8*t)        key_in = 1;         
+     #(13*t)      key_in = 0;     
+     #(13*t)      key_in = 1;                   
+  end
+endtask
+    
+initial 
+  begin
+    clk = 0;
+        rst_n = 0;
+        key_in = 1;
+        
+        #(100*t)  rst_n = 1;
+        
+        #(100*t);
+      #(10*t)    key_in_down;
+      #(100*t);
+      #(10*t)    key_in_up;
+        
+      #(8000*t);         
+    #(10*t) repeat(2)     key_in_down;          //按下时抖动
+     
+      #(640000*t);                             //按下时间
+     
+      #(10*t) repeat(2)  key_in_up;            //释放时抖动
+        
+  end
+    
+endmodule

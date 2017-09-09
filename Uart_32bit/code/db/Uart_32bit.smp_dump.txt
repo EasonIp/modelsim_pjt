@@ -1,0 +1,5 @@
+
+State Machine - |uart_receiver|txd_state
+Name txd_state.T_SEND 
+txd_state.T_IDLE 0 
+txd_state.T_SEND 1 

@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project iic_test ****
+
+make all 
+Info: Building ../iic_test_bsp/
+make --no-print-directory -C ../iic_test_bsp/
+[BSP build complete]
+[iic_test build complete]
+
+**** Build Finished ****

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Nov 28 21:09:21 2013
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
+Revision Name : svpwm
+Top-level Entity Name : svpwm
+Family : Cyclone III
+Device : EP3C25E144C8
+Timing Models : Final
+Total logic elements : 1,034 / 24,624 ( 4 % )
+    Total combinational functions : 708 / 24,624 ( 3 % )
+    Dedicated logic registers : 838 / 24,624 ( 3 % )
+Total registers : 838
+Total pins : 40 / 83 ( 48 % )
+Total virtual pins : 0
+Total memory bits : 896 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

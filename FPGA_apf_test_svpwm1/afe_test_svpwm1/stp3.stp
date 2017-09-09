@@ -1,0 +1,423 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C25/EP4CE22 (0x020F30DD)" sof_file="svpwm.sof" top_level_entity="svpwm">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2012/09/24 16:30:28  #0">
+      <clock name="clkin" polarity="posedge" tap_mode="probeonly"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="data[0]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[10]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[11]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[12]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[13]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[14]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[15]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[1]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[2]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[3]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[4]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[5]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[6]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[7]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[8]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[9]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="main:inst1|start" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[9]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[9]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[9]" tap_mode="probeonly" type="register"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="data[0]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[10]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[11]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[12]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[13]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[14]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[15]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[1]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[2]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[3]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[4]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[5]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[6]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[7]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[8]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[9]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="main:inst1|start" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[9]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[9]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[9]" tap_mode="probeonly" type="register"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="data[0]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[10]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[11]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[12]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[13]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[14]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[15]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[1]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[2]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[3]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[4]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[5]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[6]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[7]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[8]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="data[9]" tap_mode="probeonly" type="bidir pin"/>
+          <wire name="main:inst1|start" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t1[9]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t2[9]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[0]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[10]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[11]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[12]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[13]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[14]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[15]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[1]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[2]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[3]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[4]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[5]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[6]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[7]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[8]" tap_mode="probeonly" type="register"/>
+          <wire name="main:inst1|t3[9]" tap_mode="probeonly" type="register"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="data" order="lsb_to_msb" radix="hex" state="collapse" type="bidir pin">
+            <net is_signal_inverted="no" name="data[0]"/>
+            <net is_signal_inverted="no" name="data[1]"/>
+            <net is_signal_inverted="no" name="data[2]"/>
+            <net is_signal_inverted="no" name="data[3]"/>
+            <net is_signal_inverted="no" name="data[4]"/>
+            <net is_signal_inverted="no" name="data[5]"/>
+            <net is_signal_inverted="no" name="data[6]"/>
+            <net is_signal_inverted="no" name="data[7]"/>
+            <net is_signal_inverted="no" name="data[8]"/>
+            <net is_signal_inverted="no" name="data[9]"/>
+            <net is_signal_inverted="no" name="data[10]"/>
+            <net is_signal_inverted="no" name="data[11]"/>
+            <net is_signal_inverted="no" name="data[12]"/>
+            <net is_signal_inverted="no" name="data[13]"/>
+            <net is_signal_inverted="no" name="data[14]"/>
+            <net is_signal_inverted="no" name="data[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="main:inst1|start"/>
+          <bus is_signal_inverted="no" link="all" name="main:inst1|t1" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="main:inst1|t1[0]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[1]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[2]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[3]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[4]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[5]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[6]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[7]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[8]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[9]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[10]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[11]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[12]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[13]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[14]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="main:inst1|t2" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="main:inst1|t2[0]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[1]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[2]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[3]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[4]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[5]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[6]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[7]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[8]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[9]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[10]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[11]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[12]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[13]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[14]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="main:inst1|t3" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="main:inst1|t3[0]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[1]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[2]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[3]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[4]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[5]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[6]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[7]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[8]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[9]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[10]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[11]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[12]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[13]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[14]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[15]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="data" order="lsb_to_msb" radix="hex" state="collapse" type="bidir pin">
+            <net is_signal_inverted="no" name="data[0]"/>
+            <net is_signal_inverted="no" name="data[1]"/>
+            <net is_signal_inverted="no" name="data[2]"/>
+            <net is_signal_inverted="no" name="data[3]"/>
+            <net is_signal_inverted="no" name="data[4]"/>
+            <net is_signal_inverted="no" name="data[5]"/>
+            <net is_signal_inverted="no" name="data[6]"/>
+            <net is_signal_inverted="no" name="data[7]"/>
+            <net is_signal_inverted="no" name="data[8]"/>
+            <net is_signal_inverted="no" name="data[9]"/>
+            <net is_signal_inverted="no" name="data[10]"/>
+            <net is_signal_inverted="no" name="data[11]"/>
+            <net is_signal_inverted="no" name="data[12]"/>
+            <net is_signal_inverted="no" name="data[13]"/>
+            <net is_signal_inverted="no" name="data[14]"/>
+            <net is_signal_inverted="no" name="data[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="main:inst1|start"/>
+          <bus is_signal_inverted="no" link="all" name="main:inst1|t1" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="main:inst1|t1[0]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[1]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[2]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[3]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[4]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[5]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[6]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[7]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[8]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[9]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[10]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[11]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[12]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[13]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[14]"/>
+            <net is_signal_inverted="no" name="main:inst1|t1[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="main:inst1|t2" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="main:inst1|t2[0]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[1]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[2]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[3]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[4]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[5]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[6]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[7]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[8]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[9]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[10]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[11]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[12]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[13]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[14]"/>
+            <net is_signal_inverted="no" name="main:inst1|t2[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="main:inst1|t3" order="lsb_to_msb" radix="unsigned_dec" state="collapse" type="register">
+            <net is_signal_inverted="no" name="main:inst1|t3[0]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[1]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[2]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[3]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[4]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[5]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[6]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[7]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[8]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[9]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[10]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[11]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[12]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[13]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[14]"/>
+            <net is_signal_inverted="no" name="main:inst1|t3[15]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="28F2E995" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2012/09/24 16:30:28  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>00000000000000000000000000000000000000000000000000000000000000000
+            
+            
+            <pwr_up_transitional>00000000000000000000000000000000000000000000000000000000000000000
+            
+            
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2012/11/06 20:32:23  #0" power_up_mode="false" sample_depth="128" trigger_position="16">1000000100001000010000000011010101100000101110101000000001110011111111111111111100100000000110101011000001011101010000000011100111111111111111111001000000001101010110000010111010100000000111001111111111111111110010000000011010101100000101110101000000001110011111111111111111100100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111111111111111111101000000001101010110000010111010100000000111001111111111111111111010000000011010101100000101110101000000001110011111111111111111110100000000110101011000001011101010000000011100111</data>
+          <extradata>1111111111111111T111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="38"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="128"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="1023"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1362,667,398,124,0,50,124,0,2"/>
+  </global_info>
+</session>

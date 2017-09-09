@@ -1,0 +1,138 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Program/modeltech64_10_4/examples
+T_opt
+!s110 1501077945
+V:NJ]SQLGEeYMN7I?9GciD1
+04 8 4 work tb_B2BCD fast 0
+=1-68f728b1f8e4-5978a1b9-1b2-2934
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4;61
+R0
+vB2BCD
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 0_3mNbZ>U0CF7ASYY5AX00
+IRUJ[5?QZ;`FOeiC>M2Rz:3
+Z2 dD:/ProgramData/Modelsim_Pjt/test
+w1501075949
+8D:/ProgramData/Modelsim_Pjt/test/code/B2BCD.v
+FD:/ProgramData/Modelsim_Pjt/test/code/B2BCD.v
+L0 1
+Z3 OL;L;10.4;61
+!s108 1501077902.455000
+!s107 D:/ProgramData/Modelsim_Pjt/test/code/B2BCD.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/ProgramData/Modelsim_Pjt/test/code/B2BCD.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@b2@b@c@d
+vB2BCD_2
+!s110 1501077560
+!i10b 1
+!s100 IVeD_l;e_>o4kEfcE<QY22
+If0_J9H<BZ7iW3bbzJ0Wj90
+R1
+R2
+w1501077175
+8D:/ProgramData/Modelsim_Pjt/test/code/B2BCD_2.v
+FD:/ProgramData/Modelsim_Pjt/test/code/B2BCD_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1501077560.149000
+!s107 D:/ProgramData/Modelsim_Pjt/test/code/B2BCD_2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/ProgramData/Modelsim_Pjt/test/code/B2BCD_2.v|
+!i113 0
+R4
+n@b2@b@c@d_2
+vcounter
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 2J0[^hgXmPI[a4KmoXzEh1
+I8bPdgBHlCK3GEHZIQQdeK0
+R2
+w1502556193
+8D:/ProgramData/Modelsim_Pjt/test/code/counter.v
+FD:/ProgramData/Modelsim_Pjt/test/code/counter.v
+L0 1
+R3
+!s108 1502556200.179000
+!s107 D:/ProgramData/Modelsim_Pjt/test/code/counter.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/ProgramData/Modelsim_Pjt/test/code/counter.v|
+!i113 0
+R4
+vtb_B2BCD
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 [d9SSA@9J0`:>W:I_7L`H3
+IM_QdVG1NEKI=RR8Q9mgGb1
+R2
+w1501077844
+8D:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD.v
+FD:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD.v
+L0 2
+R3
+!s108 1501077902.402000
+!s107 D:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD.v|
+!i113 0
+R4
+ntb_@b2@b@c@d
+vtb_B2BCD_2
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 CNRD`XeO=@:d8TnUQ4O`D1
+I1Y]XOaAVP_i6z;QRNz80K0
+R2
+w1501077532
+8D:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD_2.v
+FD:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD_2.v
+L0 2
+R3
+!s108 1501077560.067000
+!s107 D:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD_2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/ProgramData/Modelsim_Pjt/test/code/tb_B2BCD_2.v|
+!i113 0
+R4
+ntb_@b2@b@c@d_2
+vtb_counter
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 fdJ;DbkYS`jPdm@DPjPM62
+I_ek<f9cKP[QA@[`b]V9no3
+R2
+w1501074926
+8D:/ProgramData/Modelsim_Pjt/test/code/counter_tb.v
+FD:/ProgramData/Modelsim_Pjt/test/code/counter_tb.v
+L0 2
+R3
+!s108 1502556200.271000
+!s107 D:/ProgramData/Modelsim_Pjt/test/code/counter_tb.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/ProgramData/Modelsim_Pjt/test/code/counter_tb.v|
+!i113 0
+R4

@@ -1,0 +1,6 @@
+
+State Machine - |svpwm|pwm:inst|state
+Name state.down state.up state.idle 
+state.idle 0 0 0 
+state.up 0 1 1 
+state.down 1 0 1 

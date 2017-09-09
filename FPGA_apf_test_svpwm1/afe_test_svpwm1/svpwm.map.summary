@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Sep 06 01:41:27 2017
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : svpwm
+Top-level Entity Name : svpwm
+Family : Cyclone III
+Total logic elements : 1,139
+    Total combinational functions : 726
+    Dedicated logic registers : 851
+Total registers : 851
+Total pins : 40
+Total virtual pins : 0
+Total memory bits : 896
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

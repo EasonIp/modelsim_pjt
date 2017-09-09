@@ -1,0 +1,344 @@
+/********************************Copyright**************************************                           
+    **----------------------------File information--------------------------
+    ** File name  :key_function_2.v  
+    ** CreateDate :2015.03
+    ** Funtions   :按键的用法（二）：点击和长击，单击和双击
+    ** Operate on :M5C06N3L114C7
+    ** Copyright  :All rights reserved. 
+    ** Version    :V1.0
+    **---------------------------Modify the file information----------------
+    ** Modified by   :
+    ** Modified data :        
+    ** Modify Content:
+    *******************************************************************************/
+    module  key_function_2  (
+                                        clk,
+                                        rst_n,
+                      
+                                        key_4,
+                                        key_5,
+                                        
+                                        led_d41,
+                                        led_d42,
+                                        led_d51,
+                                        led_d52
+                                        
+                                            );
+    input          clk;
+    input          rst_n;
+    
+    input          key_4;                 //按键的点击与长击：按下按键后，2S内松开按键则为点击，2s后松开按键为长击,默认未按下为高。
+    input          key_5;                /*按键的单击和双击，完成第一次按键后100ms之内第二次按下按键则为双击，否则为单击    */  
+    
+    output         led_d41;
+    output         led_d42;
+    output         led_d51;
+    output         led_d52;
+    
+    //---------------------------
+    //定时2s
+    reg              cnt_en;
+    localparam  t_1s = 25'd23999999;        /* //实际使用 */  
+   // localparam  t_1s = 25'd239;           /* //测试使用 */
+       
+    localparam  t_2s = 2'd2;
+    reg      [24:0]      cnt;
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+           cnt <= 0;
+       end
+     else if(cnt_en)
+       begin
+          if(cnt == t_1s)
+                    cnt <= 0;
+               else 
+                   cnt <= cnt + 1;
+       end
+      else
+             cnt <= 0;    
+     end
+    
+    reg     [1:0]   cnt1;
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+          cnt1 <= 0;
+       end
+     else if(cnt_en)
+       begin
+            if(cnt1 == 2'd2)
+                cnt1 <= 2'd2;
+            else if(cnt == t_1s)
+                 cnt1 <= cnt1 + 1;
+       end
+      else
+             cnt1 <= 0;
+     end
+       
+    //-------------------------------
+    /* 取key_4的上升沿和下降沿   */
+    reg    [2:0]    key_4_reg;
+    wire            key_4_pos;
+    wire            key_4_neg;
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+          key_4_reg  <= 3'b111;
+       end
+     else 
+       begin
+          key_4_reg  <= {key_4_reg[1:0],key_4};
+       end
+     end
+       assign  key_4_pos = (key_4_reg[2:1] == 2'b01);
+       assign  key_4_neg = (key_4_reg[2:1] == 2'b10);
+    
+    //------------------------------
+    /*  状态机 */
+     reg   [2:0]   state1;
+     reg           key_S;
+       reg           key_L;
+       always @(posedge clk or negedge rst_n)
+        begin
+         if(!rst_n)
+          begin
+              state1 <= 'd0;
+                    cnt_en <= 0;
+                    key_S <= 0;
+                    key_L <= 0;
+           end
+         else 
+           begin
+             case(state1)
+                    'd0:
+                       begin
+                             cnt_en <= 0;
+                               key_S  <= 0;
+                         key_L  <= 0;
+                         if(key_4_neg)          /* 按键按下  */ 
+                                 state1 <= 'd1;
+                               else
+                                   state1 <= 'd0;
+                        end
+                       'd1:
+                         begin
+                               if(key_4_pos)            /* 按键释放   */
+                                   begin
+                                       cnt_en <= 0;    
+                                       state1 <= 'd2;
+                                       key_S  <= 1;  
+                                    end
+                               else if((key_4_reg==3'b000)&&(cnt1 == 2'd2))   /* 按键一直为低，延时2s之后  */
+                                   begin
+                                       cnt_en <= 0;    
+                                       state1 <= 'd3;
+                                       key_L  <= 1;
+                                    end
+                               else 
+                                  cnt_en <= 1;                                    
+                               end
+                    'd2:                       /* 点击   */ 
+                       begin
+                               key_S  <= 0;  
+                                 state1 <= 'd5;
+                               end
+                    'd3:
+                       begin
+                  key_L  <= 0;
+                                state1 <= 'd4;
+                               end
+                       'd4:
+                         begin
+                               if(key_4_pos)
+                                state1 <= 'd5; 
+                                else
+                                    state1 <= 'd4;
+                               end
+                       'd5:
+                         begin
+                                   state1 <= 'd0;
+                               end                            
+                     default:state1 <= 'd0;
+                   endcase
+                   
+           end
+         end
+           
+    reg        led_s;
+    reg        led_l;
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+         led_s <= 0;
+       end
+     else if(key_S)
+       begin
+         led_s <= ~led_s;
+       end
+     end
+       
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+         led_l <= 0;
+       end
+     else if(key_L)
+       begin
+         led_l <= ~led_l;
+       end
+     end 
+    
+   //------------------------------------ 
+    localparam  t_100ms = 22'd2399999;          /* //实际使用 */  
+   // localparam  t_100ms = 22'd23;          /* //测试使用 */
+    reg     [21:0]     cnnt;
+    reg                cnnt_en;
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+        cnnt <= 0;
+       end
+     else  if(cnnt_en)
+       begin
+         if(cnnt == t_100ms )
+                  cnnt <= t_100ms;
+               else 
+                    cnnt <= cnnt + 1;
+       end
+       else 
+            cnnt <= 0;
+     end
+   //-------------------------------
+    /* 取key_5的上升沿和下降沿   */
+    reg    [2:0]    key_5_reg;
+    wire            key_5_pos;
+    wire            key_5_neg;
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+          key_5_reg  <= 3'b111;
+       end
+     else 
+       begin
+          key_5_reg  <= {key_5_reg[1:0],key_5};
+       end
+     end
+       assign  key_5_pos = (key_5_reg[2:1] == 2'b01);
+       assign  key_5_neg = (key_5_reg[2:1] == 2'b10);
+       
+    //------------------------------
+    /*  状态机 */
+     reg   [2:0]   state2;
+     reg           key_SS;
+       reg           key_D;
+       always @(posedge clk or negedge rst_n)
+        begin
+         if(!rst_n)
+          begin
+              state2 <= 'd0;
+                    cnnt_en <= 0;
+                    key_SS <= 0;
+                    key_D <= 0;
+           end
+         else 
+           begin
+             case(state2)
+                    'd0:
+                       begin
+                             cnnt_en <= 0;
+                               key_SS  <= 0;
+                         key_D  <= 0;
+                         if(key_5_neg)          /*第一次 按键按下  */ 
+                                 state2 <= 'd1;
+                               else
+                                   state2 <= 'd0;
+                        end
+                       'd1:
+                         begin
+                             if(key_5_pos)            /*第一次 按键释放   */     
+                                 begin
+                                       state2 <= 'd2;    
+                                    end
+                              else     
+                                   state2 <= 'd1;     
+                           end
+                       'd2:
+                         begin
+                               if((key_5_neg)&&(cnnt < t_100ms))    
+                                   begin
+                                       cnnt_en <= 0;    
+                                       state2 <= 'd3;
+                                       key_D  <= 1; 
+                                   end
+                               else if(cnnt ==t_100ms)    
+                                 begin
+                                       cnnt_en <= 0;    
+                                       state2 <= 'd4;
+                                       key_SS  <= 1;                                            
+                                       end
+                               else 
+                                   cnnt_en <= 1;    
+                               end
+                       'd3: 
+                         begin
+                               key_D  <= 0;     
+                               if(key_5_pos)    
+                                   state2 <= 'd5;   
+                               end
+                       'd4: 
+                         begin                
+                               key_SS  <= 0;    
+                               state2 <= 'd5;
+                         end
+                       'd5:
+                         begin
+                                state2 <= 'd0;    
+                               end                        
+                     default:state2 <= 'd0;
+                   endcase
+                   
+           end
+         end
+           
+    reg        led_signal;
+    reg        led_double;
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+         led_signal <= 0;
+       end
+     else if(key_SS)
+       begin
+         led_signal <= ~led_signal;
+       end
+     end
+       
+    always @(posedge clk or negedge rst_n)
+    begin
+     if(!rst_n)
+      begin
+         led_double <= 0;
+       end
+     else if(key_D)
+       begin
+         led_double <= ~led_double;
+       end
+     end 
+       
+    //------------------------
+     assign led_d41 = led_s;
+       assign led_d42 = led_l; 
+     assign led_d51 = led_signal;
+       assign led_d52 = led_double;    
+    
+    endmodule
+332

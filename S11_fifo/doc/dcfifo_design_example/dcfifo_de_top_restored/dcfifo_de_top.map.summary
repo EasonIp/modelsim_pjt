@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Oct 29 08:36:43 2015
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : dcfifo_de_top
+Top-level Entity Name : dcfifo_de_top
+Family : Stratix III
+Logic utilization : N/A
+    Combinational ALUTs : 71
+    Memory ALUTs : 0
+    Dedicated logic registers : 70
+Total registers : 70
+Total pins : 44
+Total virtual pins : 0
+Total block memory bits : 16,640
+DSP block 18-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

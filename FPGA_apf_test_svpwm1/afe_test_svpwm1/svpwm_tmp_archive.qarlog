@@ -1,0 +1,46 @@
+Quartus II Archive log --	E:/东大 资料/svpwm2_1/svpwm_tmp_archive.qarlog
+
+Archive:	E:/东大 资料/svpwm2_1/svpwm_tmp_archive.qar
+Date:		Mon Jun 04 15:20:03 2012
+Quartus II		9.1 Build 350 03/24/2010 SP 2 SJ Full Version
+
+	=========== Files Selected: ===========
+E:/东大 资料/svpwm2_1/altpll0.bsf
+E:/东大 资料/svpwm2_1/altpll0.cmp
+E:/东大 资料/svpwm2_1/altpll0.ppf
+E:/东大 资料/svpwm2_1/altpll0.qip
+E:/东大 资料/svpwm2_1/altpll0.vhd
+E:/东大 资料/svpwm2_1/db/svpwm.sim.cvwf
+E:/东大 资料/svpwm2_1/divide1.bsf
+E:/东大 资料/svpwm2_1/divide1.cmp
+E:/东大 资料/svpwm2_1/divide1.qip
+E:/东大 资料/svpwm2_1/divide1.vhd
+E:/东大 资料/svpwm2_1/divide2.bsf
+E:/东大 资料/svpwm2_1/divide2.cmp
+E:/东大 资料/svpwm2_1/divide2.qip
+E:/东大 资料/svpwm2_1/divide2.vhd
+E:/东大 资料/svpwm2_1/genghao.vhd
+E:/东大 资料/svpwm2_1/jisuan_abc.vhd
+E:/东大 资料/svpwm2_1/jisuan_t.vhd
+E:/东大 资料/svpwm2_1/judge_section.vhd
+E:/东大 资料/svpwm2_1/mult1.bsf
+E:/东大 资料/svpwm2_1/mult1.cmp
+E:/东大 资料/svpwm2_1/mult1.qip
+E:/东大 资料/svpwm2_1/mult1.tdf
+E:/东大 资料/svpwm2_1/mult3.bsf
+E:/东大 资料/svpwm2_1/mult3.cmp
+E:/东大 资料/svpwm2_1/mult3.qip
+E:/东大 资料/svpwm2_1/mult3.vhd
+E:/东大 资料/svpwm2_1/mult4.bsf
+E:/东大 资料/svpwm2_1/mult4.cmp
+E:/东大 资料/svpwm2_1/mult4.qip
+E:/东大 资料/svpwm2_1/mult4.vhd
+E:/东大 资料/svpwm2_1/pwm.vhd
+E:/东大 资料/svpwm2_1/sina.vhd
+E:/东大 资料/svpwm2_1/sinb.vhd
+E:/东大 资料/svpwm2_1/svpwm.bdf
+E:/东大 资料/svpwm2_1/svpwm.vwf
+	======= Total: 35 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

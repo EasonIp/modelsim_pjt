@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at pwm.v(10): object "S" differs only in case from object "s" in the same scope
+Info (10281): Verilog HDL Declaration information at pwm1.v(10): object "S" differs only in case from object "s" in the same scope

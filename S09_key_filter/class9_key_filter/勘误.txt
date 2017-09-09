@@ -1,0 +1,14 @@
+FILTER1:
+				if(cnt_full)begin
+					key_flag <= 1'b1;
+					key_state <= 1'b1;
+					state <= IDEL;
+					！！！这里需要再加上将en_cnt清零的操作
+
+				end
+				else if(nedge)begin
+					en_cnt <= 1'b0;
+					state <= DOWN;
+				end
+				else
+					state <= FILTER1;
